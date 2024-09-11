@@ -11,16 +11,5 @@ This application is designed for fitness enthusiasts and individuals aiming to g
 - **Responsive Design:** Accessible on both desktop and mobile devices, ensuring a seamless user experience.
 
 ## Technologies Used
-- **Frontend:** React.js
-- **Backend:** Node.js, Express.js
-- **Database:** MongoDB
+- **Frontend:** React.js, HTML, CSS, and Javascript
 - **Styling:** Tailwind CSS
-- **APIs:** [Specify any APIs you used, e.g., Nutritionix API for food data]
-
-## Setup
-To run this project locally, follow these steps:
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/recommended-daily-intake-calculator.git
-
