@@ -1,5 +1,9 @@
 import React, { useState } from 'react'
 import './Bmi_cal.css'
+import underwegith from '../assets/bmi_chart/underweigth.png'
+import overweight from '../assets/bmi_chart/overweight.png'
+import obese from '../assets/bmi_chart/obese.png'
+import normal from '../assets/bmi_chart/normal.png'
 
 function Bmi_cal() {
     const [feet, setFeet] = useState(0)
@@ -38,6 +42,7 @@ function Bmi_cal() {
                 console.log(feet, inch, lbs)
                 get_bmi()
             }}>
+
                 <h4>Height</h4>
                 <label>Feet</label>
                 <input type='number' value={feet} onChange={(e) => setFeet(e.target.value)}></input>
@@ -48,12 +53,32 @@ function Bmi_cal() {
                 <label>lbs</label>
                 <input type='number' value={lbs} onChange={(e) => setLbs(e.target.value)}></input>
 
-                <button>Check</button>
+
+                <button id='form_btn'>Check</button>
             </form>
 
-            
-            {bmiScore !== 0 && <p>{bmiScore.bmi} you're normal weight! </p>}
-            
+
+            {/* {bmiScore !== 0 && <h3>{bmiScore.bmi} you're normal weight! </h3>} */}
+
+            <div id='chart_container'>
+                <div className='chart_box'>
+                    <img src={underwegith} />
+                    <div className={bmiScore.bmi < 18.5 ? '' : 'shade'}></div>
+                </div>
+                <div className='chart_box'>
+                    <img src={normal} />
+                    <div className={bmiScore.bmi < 30 && bmiScore.bmi >= 18.5 ? '' : 'shade'}></div>
+                </div>
+                <div className='chart_box'>
+                    <img src={overweight} />
+                    <div className={bmiScore.bmi < 35 && bmiScore.bmi >= 30  ? '' : 'shade'}></div>
+                </div>
+                <div className='chart_box'>
+                    <img src={obese} />
+                    <div className={bmiScore.bmi > 35.0 ? '' : 'shade'}></div>
+                </div>
+            </div>
+
         </div>
     )
 }
