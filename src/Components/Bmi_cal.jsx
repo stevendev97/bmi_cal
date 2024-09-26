@@ -60,7 +60,7 @@ function Bmi_cal() {
 
             {/* {bmiScore !== 0 && <h3>{bmiScore.bmi} you're normal weight! </h3>} */}
 
-            <div id='chart_container'>
+            {/* <div id='chart_container'>
                 <div className='chart_box'>
                     <img src={underwegith} />
                     <div className={bmiScore.bmi < 18.5 ? '' : 'shade'}></div>
@@ -77,7 +77,7 @@ function Bmi_cal() {
                     <img src={obese} />
                     <div className={bmiScore.bmi > 35.0 ? '' : 'shade'}></div>
                 </div>
-            </div>
+            </div> */}
 
         </div>
     )

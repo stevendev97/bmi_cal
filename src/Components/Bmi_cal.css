@@ -1,9 +1,9 @@
-.bmi_cal_container {
+/* .bmi_cal_container {
     padding: 4rem;
-    background-color: #D6E0E9;
+    background-color: #F3F4F5;
 }
 
-h2 {
+.bmi_cal_container h2 {
     font-weight: bolder;
     font-size: 3rem;
     text-align: center;
@@ -61,4 +61,27 @@ p {
     position: absolute;
     top: 0;
     left: 0;
+} */
+
+
+.bmi_cal_container {
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#bmi_form {
+    border: 1px solid gray;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: .5rem;
+    margin: 2rem;
+}
+
+#bmi_form h4 {
+    text-align: center;
 }
