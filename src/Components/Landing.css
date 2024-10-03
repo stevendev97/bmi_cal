@@ -92,3 +92,17 @@
     }
 
 }
+
+@media only screen and (min-width: 1024px) {
+    .landing_title h1 {
+        font-size: clamp(2rem, 3vw, 4rem);
+    }
+
+    .landing_title p {
+        font-size: clamp(2rem, 7vw, 5rem);
+    }
+
+    #landing_img_container {
+        width: 45%;
+    }
+}
