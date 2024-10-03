@@ -86,6 +86,25 @@ p {
     text-align: center;
 }
 
+#loader {
+    margin: 200px auto;
+}
+
+
+#chart_container {
+    display: flex;
+    width: 100%;
+}
+
+.chart_box img {
+    width: 100%;
+}
+
+.selected {
+    border: 2px solid black;
+}
+
+
 @media only screen and (min-width: 768px) {
     #bmi_form {
         width: 50%;
