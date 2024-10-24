@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react'
+import './Result.css'
 
 import underwegith from '../assets/bmi_chart/underweigth.png'
 import overweight from '../assets/bmi_chart/overweight.png'
