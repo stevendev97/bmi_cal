@@ -91,11 +91,6 @@ p {
 }
 
 
-#chart_container {
-    display: flex;
-    width: 100%;
-}
-
 .chart_box img {
     width: 100%;
 }
